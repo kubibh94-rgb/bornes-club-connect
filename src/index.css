@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 25 35% 10%;
+    --foreground: 35 100% 95%;
+
+    --card: 20 30% 15%;
+    --card-foreground: 35 100% 95%;
+
+    --popover: 20 30% 15%;
+    --popover-foreground: 35 100% 95%;
+
+    --primary: 25 95% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 100% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 20% 25%;
+    --muted-foreground: 35 50% 70%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 25% 25%;
+    --input: 25 25% 25%;
+    --ring: 25 95% 60%;
+
+    --radius: 1rem;
+
+    /* Custom design tokens - Sunset theme */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 60%), hsl(340 100% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 55%), hsl(25 95% 60%));
+    --gradient-card: linear-gradient(135deg, hsl(20 30% 15% / 0.8), hsl(25 25% 20% / 0.6));
+    --gradient-bg: linear-gradient(to bottom, hsl(340 100% 40%), hsl(25 95% 45%), hsl(45 100% 50%));
+    --shadow-glow: 0 0 60px hsl(25 95% 60% / 0.4);
+    --shadow-glow-secondary: 0 0 60px hsl(340 100% 65% / 0.4);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-secondary {
+    box-shadow: var(--shadow-glow-secondary);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.green-dot {
+  background-color: rgb(9, 214, 9);
+}
+
+.logo-hero-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(15px) brightness(0.5);
+  object-fit: contain;
+  background-color: #111;
+}
+
