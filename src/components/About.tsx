@@ -20,8 +20,8 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-20 px-4 overflow-x-hidden">
+      <div className="container mx-auto max-w-6xl relative">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -47,10 +47,10 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Decorative blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[150px] pointer-events-none"></div>
+        {/* Decorative blur */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-secondary/10 rounded-full blur-[75px] pointer-events-none" />
+      </div>
     </section>
   );
 };
