@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Shield, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,15 +22,15 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-8 justify-center mb-16">
           <Button variant="hero" size="xl" asChild className="group">
-            <a href="fh5">
+            <Link to="/fh5">
               Forza Horizon
-            </a>
+            </Link>
           </Button>
 
           <Button variant="hero" size="xl" asChild className="group">
-            <a href="ets">
+            <Link to="/ets">
               Euro Truck Simulator
-            </a>
+            </Link>
           </Button>
         </div>
 
