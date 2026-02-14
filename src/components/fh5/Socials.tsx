@@ -22,7 +22,7 @@ const Socials = () => {
     {
       name: "Instagram",
       icon: <Instagram className="w-6 h-6" />,
-      url: "https://www.instagram.com/bornesclubfr",
+      url: "https://www.instagram.com/bornesclubfr_",
       color: "hover:text-[#E1306C]"
     },
     {
@@ -55,14 +55,14 @@ const Socials = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex flex-wrap flex-col sm:flex-row gap-8 justify-center">
+        <div className="flex flex-wrap flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center">
           {socialLinks.map((social, index) => (
             <Button
               key={index}
               variant="social"
               size="lg"
               asChild
-              className="h-24 w-52 group"
+              className="h-20 sm:h-24 w-full sm:w-52 group"
             >
               <a
                 href={social.url}
