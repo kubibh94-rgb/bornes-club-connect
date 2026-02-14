@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Youtube, Instagram } from "lucide-react";
+import { Youtube, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Socials = () => {
   const socialLinks = [
@@ -7,10 +7,10 @@ const Socials = () => {
       name: "TikTok",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
         </svg>
       ),
-      url: "https://www.tiktok.com/@bornesclubfr",
+      url: "https://www.tiktok.com/@bornesclubfrfh5",
       color: "hover:text-[#00f2ea]"
     },
     {
@@ -24,7 +24,21 @@ const Socials = () => {
       icon: <Instagram className="w-6 h-6" />,
       url: "https://www.instagram.com/bornesclubfr",
       color: "hover:text-[#E1306C]"
-    }
+    },
+    {
+      name: "Facebook",
+      icon: <Facebook className="w-6 h-6" />,
+      url: "https://www.facebook.com/people/Bornes-Club-FR/61587169949431/",
+      color: "hover:text-[#E1306C]"
+    },
+    {
+      name: "X",
+      icon: <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg">
+        <path d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z" />
+      </svg>,
+      url: "https://x.com/BornesClubFR",
+      color: "hover:text-[#E1306C]"
+    },
   ];
 
   return (
@@ -41,14 +55,14 @@ const Socials = () => {
         </div>
 
         {/* Social Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap flex-col sm:flex-row gap-8 justify-center">
           {socialLinks.map((social, index) => (
             <Button
               key={index}
               variant="social"
               size="lg"
               asChild
-              className="h-24 group"
+              className="h-24 w-52 group"
             >
               <a
                 href={social.url}
@@ -66,8 +80,8 @@ const Socials = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center gradient-card rounded-2xl p-8 border border-primary/20">
-          <h3 className="text-2xl font-bold mb-4 text-foreground">
+        <div className="mt-40 text-center gradient-card rounded-2xl p-8 border border-primary/20">
+          <h3 className="text-4xl font-bold mb-4 text-foreground">
             Prêt à nous rejoindre ?
           </h3>
           <p className="text-muted-foreground mb-6">
