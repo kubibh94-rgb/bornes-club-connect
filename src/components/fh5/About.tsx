@@ -5,7 +5,7 @@ const About = () => {
     {
       icon: MessageCircle,
       title: "Communauté Active",
-      description: "Plus de 2000 membres passionnés et une ambiance conviviale où chacun peut s'exprimer librement"
+      description: "Plein de membres passionnés et une ambiance conviviale où chacun peut s'exprimer librement"
     },
     {
       icon: Sparkles,

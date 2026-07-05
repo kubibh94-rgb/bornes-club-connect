@@ -16,7 +16,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-foreground mb-12 max-w-2xl mx-auto font-semibold drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
-          Rejoignez une communauté passionnée de plus de <span className="text-secondary font-bold drop-shadow-lg">2000 membres</span> avec des staffs toujours à l&apos;écoute
+          Rejoignez une communauté passionnée de plein de <span className="text-secondary font-bold drop-shadow-lg">de membres</span> avec des staffs toujours à l&apos;écoute
         </p>
 
         {/* CTA Buttons */}
